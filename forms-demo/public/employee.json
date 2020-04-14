@@ -1,0 +1,18 @@
+[
+    {
+        "employeePicture":"jack",
+        "employeeID":101,
+        "employeeName":"Jack",
+        "employeeAge":23,
+        "employeeSalary":40000,
+        "employeeAchievments":""
+    },
+    {
+        "employeePicture":"jane",
+        "employeeID":102,
+        "employeeName":"Jane",
+        "employeeAge":25,
+        "employeeSalary":50000,
+        "employeeAchievments":""
+    }
+]
