@@ -16,7 +16,7 @@ import * as actionCreator from "../../store/actions/index";
 //   salad: 0.6,
 //   bacon: 1
 // };
-class BurgerBuilder extends React.Component {
+export class BurgerBuilder extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
