@@ -76,7 +76,7 @@ class Auth extends React.Component {
       // this.state.controls.email.value,
       // this.state.controls.password.value,
       "TEST@TEST.com",
-      "Kk27922004@",
+      "1234",
       this.state.isSignUp
     );
   };
