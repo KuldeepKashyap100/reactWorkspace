@@ -1,13 +1,19 @@
-import React, { useEffect, useRef, useContext,useState } from "react";
+import React, { useEffect, useRef, useContext, useState } from "react";
 import AuthContext from "../context/AuthContext";
 const Cockpit = props => {
   console.log("Cockpit rendering...");
   const buttonRef = useRef(null);
   const context = useContext(AuthContext);
   const [count, setCount] = useState(0);
-  // What do we pass to useState as an argument? The only argument to the useState() Hook is the initial state. Unlike with classes, the state doesn’t have to be an object. We can keep a number or a string if that’s all we need. In our example, we just want a number for how many times the user clicked, so pass 0 as initial state for our variable. (If we wanted to store two different values in state, we would call useState() twice.)
+  // What do we pass to useState as an argument? The only argument to the useState() Hook is the initial state. 
+  // Unlike with classes, the state doesn’t have to be an object. 
+  // We can keep a number or a string if that’s all we need. 
+  // In our example, we just want a number for how many times the user clicked, 
+  // so pass 0 as initial state for our variable. 
+  // (If we wanted to store two different values in state, we would call useState() twice.)
 
-  //runs on every render
+  // runs after every render
+  // works as componentDidUpdate
   useEffect(() => {
     console.log("Cockpit.js runs on every update");
     return () => {

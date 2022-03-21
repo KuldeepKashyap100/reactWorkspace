@@ -21,6 +21,9 @@ const ingredientReducer = (currentIngredients, action) => {
 
 
 const Ingredients = () => {
+  // use useReducer whenener you have state a bit complex
+  // and want to have different ways to change the state like delete, add and set
+  // and newState also depends on prevState
   const [userIngredients, dispatch] = useReducer(ingredientReducer, []);
   const {loading, error, ingredientDetails, sendRequest, requestType, ingredientId} = useHttp();
   // const [userIngredients, setUserIngredients] = useState([]);
